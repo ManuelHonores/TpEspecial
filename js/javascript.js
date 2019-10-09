@@ -21,10 +21,8 @@ addEventListener("DOMContentLoaded", function(){
             "Edad" : 19
         }
     ]
-    let body =  document.getElementById('container').innerHTML;
-    body += "<table>";
+    let body =  document.getElementById('container');
     for (let i = 0; i<array.length; i++){
-        body += "<tr>" + "<td>" + array[i].Nombre + "</td>" + "<td>" + array[i].Mail + "</td>" + "<td>" + array[i].Edad + "</td>" + "</tr>";
+        body.innerHTML += "<tr>" + "<td>" + array[i].Nombre + "</td>" + "<td>" + array[i].Mail + "</td>" + "<td>" + array[i].Edad + "</td>" + "</tr>";
     }
-    body += "</table>";
 });
